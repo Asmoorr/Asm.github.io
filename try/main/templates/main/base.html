@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock %}</title>
+    {% block css %}{% endblock %}
+    <link rel="shortcut icon" href="{% static 'main/imgs/Logo.ico' %}">
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

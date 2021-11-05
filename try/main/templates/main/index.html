@@ -1,0 +1,338 @@
+{% extends 'main\base.html' %}
+{% load static %}
+
+{% block title %}
+Расписание
+{% endblock %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+    <div class="day monday">
+      <p class="day-name"><span class="anim-1">Понедельник</span></p>
+      <table class="diary-day">
+        <colgroup class="columns">
+          <col width="6%">
+          <col width="44%">
+          <col width="44%">
+          <col width="6%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Предмет</th>
+            <th>Домашнее задание</th>
+            <th>Файл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="diary-day__number">1</td>
+            <td class="diary-day__subject">Физическая культура</td>
+            <td class="diary-day__task">Стр.97</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">2</td>
+            <td class="diary-day__subject">Алгебра</td>
+            <td class="diary-day__task">П.7.; П.7, вопросы 1-9, №227,230,232.</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">3</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">4</td>
+            <td class="diary-day__subject">Литература</td>
+            <td class="diary-day__task">Задание 8 (стр. 90)
+            </td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">5</td>
+            <td class="diary-day__subject">Иностранный язык (английский вторая группа)</td>
+            <td class="diary-day__task">Повторить теорию модулей 1-2</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">6</td>
+            <td class="diary-day__subject">История России. Всеобщая история</td>
+            <td class="diary-day__task">§11, вопросы к пар.</td>
+            <td class="diary-day__task" align="center"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">7</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="day tuesday">
+      <p class="day-name"><span class="anim-1">Вторник</span></p>
+      <table class="diary-day">
+        <colgroup class="columns">
+          <col width="6%">
+          <col width="44%">
+          <col width="44%">
+          <col width="6%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Предмет</th>
+            <th>Домашнее задание</th>
+            <th>Файл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="diary-day__number">1</td>
+            <td class="diary-day__subject">Физическая культура</td>
+            <td class="diary-day__task">Стр.97</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">2</td>
+            <td class="diary-day__subject">Алгебра</td>
+            <td class="diary-day__task">П.7.; П.7, вопросы 1-9, №227,230,232.</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">3</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">4</td>
+            <td class="diary-day__subject">Литература</td>
+            <td class="diary-day__task">Задание 8 (стр. 90)
+            </td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">5</td>
+            <td class="diary-day__subject">Иностранный язык (английский вторая группа)</td>
+            <td class="diary-day__task">Повторить теорию модулей 1-2</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">6</td>
+            <td class="diary-day__subject">История России. Всеобщая история</td>
+            <td class="diary-day__task">§11, вопросы к пар.</td>
+            <td class="diary-day__task" align="center"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">7</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="day wednesday">
+      <p class="day-name"><span class="anim-1">Среда</span></p>
+      <table class="diary-day">
+        <colgroup class="columns">
+          <col width="6%">
+          <col width="44%">
+          <col width="44%">
+          <col width="6%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Предмет</th>
+            <th>Домашнее задание</th>
+            <th>Файл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="diary-day__number">1</td>
+            <td class="diary-day__subject">Физическая культура</td>
+            <td class="diary-day__task">Стр.97</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">2</td>
+            <td class="diary-day__subject">Алгебра</td>
+            <td class="diary-day__task">П.7.; П.7, вопросы 1-9, №227,230,232.</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">3</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">4</td>
+            <td class="diary-day__subject">Литература</td>
+            <td class="diary-day__task">Задание 8 (стр. 90)
+            </td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">5</td>
+            <td class="diary-day__subject">Иностранный язык (английский вторая группа)</td>
+            <td class="diary-day__task">Повторить теорию модулей 1-2</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">6</td>
+            <td class="diary-day__subject">История России. Всеобщая история</td>
+            <td class="diary-day__task">§11, вопросы к пар.</td>
+            <td class="diary-day__task" align="center"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">7</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="day thursday">
+      <p class="day-name"><span class="anim-1">Четверг</span></p>
+      <table class="diary-day">
+        <colgroup class="columns">
+          <col width="6%">
+          <col width="44%">
+          <col width="44%">
+          <col width="6%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Предмет</th>
+            <th>Домашнее задание</th>
+            <th>Файл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="diary-day__number">1</td>
+            <td class="diary-day__subject">Физическая культура</td>
+            <td class="diary-day__task">Стр.97</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">2</td>
+            <td class="diary-day__subject">Алгебра</td>
+            <td class="diary-day__task">П.7.; П.7, вопросы 1-9, №227,230,232.</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">3</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">4</td>
+            <td class="diary-day__subject">Литература</td>
+            <td class="diary-day__task">Задание 8 (стр. 90)
+            </td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">5</td>
+            <td class="diary-day__subject">Иностранный язык (английский вторая группа)</td>
+            <td class="diary-day__task">Повторить теорию модулей 1-2</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">6</td>
+            <td class="diary-day__subject">История России. Всеобщая история</td>
+            <td class="diary-day__task">§11, вопросы к пар.</td>
+            <td class="diary-day__task" align="center"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">7</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="day friday">
+      <p class="day-name"><span class="anim-1">Пятница</span></p>
+      <table class="diary-day">
+        <colgroup class="columns">
+          <col width="6%">
+          <col width="44%">
+          <col width="44%">
+          <col width="6%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Предмет</th>
+            <th>Домашнее задание</th>
+            <th>Файл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="diary-day__number">1</td>
+            <td class="diary-day__subject">Физическая культура</td>
+            <td class="diary-day__task">Стр.97</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">2</td>
+            <td class="diary-day__subject">Алгебра</td>
+            <td class="diary-day__task">П.7.; П.7, вопросы 1-9, №227,230,232.</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">3</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">4</td>
+            <td class="diary-day__subject">Литература</td>
+            <td class="diary-day__task">Задание 8 (стр. 90)
+            </td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">5</td>
+            <td class="diary-day__subject">Иностранный язык (английский вторая группа)</td>
+            <td class="diary-day__task">Повторить теорию модулей 1-2</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">6</td>
+            <td class="diary-day__subject">История России. Всеобщая история</td>
+            <td class="diary-day__task">§11, вопросы к пар.</td>
+            <td class="diary-day__task" align="center"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+          <tr>
+            <td class="diary-day__number">7</td>
+            <td class="diary-day__subject">География</td>
+            <td class="diary-day__task">1) изучить § 13; 2) ответить на вопросы и выполнить задания в карте урока</td>
+            <td class="diary-day__task"><img class="saving" src="{% static 'main/imgs/saving.png' %}" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <!--</div>
+  <div>Автор иконок: <a href="http://www.webalys.com/" title="Webalys">Webalys</a>
+    from <a href="https://www.flaticon.com/ru/" title="Flaticon">www.flaticon.com</a>
+  </div>!-->
+{% endblock %}

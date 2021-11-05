@@ -1,0 +1,185 @@
+/*Обнуление*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active {
+	outline: none;
+}
+
+a:focus, a:active {
+	outline: none;
+}
+
+nav, footer, header, aside {
+	display: block;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*--------------------*/
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.content {
+	min-width: 1170px;
+	margin: auto;
+}
+
+.mtb-3 {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.diary-day {
+	width: 100%;
+	box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+	border-collapse: collapse;
+}
+
+td, th {
+	text-align: center;
+	padding: 10px;
+}
+
+th{
+	background-color: rgba(29, 136, 232, 0.8)	;
+	color: #fff;
+}
+
+th:nth-child(odd) {
+	background: rgba(33, 150, 243, 0.8);
+}
+
+th:hover {
+	color: rgba(0, 0, 0, 1);
+	transition: 1s;
+}
+
+tr:nth-child(even) {
+	background: rgba(224, 225, 255, 0.3);
+}
+tr:hover {
+	background-color: rgba(192, 224, 255, 0.6);
+	transition: 1s;
+}
+
+.diary-day__number {
+	text-align: center;
+}
+
+.diary-day__subject {
+	text-align: left;
+}
+
+.diary-day__task {
+	text-align: left;
+}
+
+.diary-day {
+	margin-bottom: 1em;
+}
+
+.day-name {
+	margin-bottom: 2em;
+	font-size: 16px;
+	text-align: center;
+}
+
+.content {
+	max-width: 1200px;
+	margin: 10px auto 10px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 6%;
+	grid-row-gap: 1em;
+}
+
+@media screen and (max-width: 1199px) {
+	.content{
+		max-height: 70%;
+		min-width: 70%;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.saving {
+	width: 65%;
+	height: 65%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
